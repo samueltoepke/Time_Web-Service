@@ -23,9 +23,9 @@ public class HttpRequestTest {
     @Autowired
     private TestRestTemplate restTemplate;
 
-	/*
+    /*
      * getTimeDefaultShouldReturnGmt(). REST test to make sure
-	 *   default gettime request returns time in GMT.
+     *   default gettime request returns time in GMT.
      *   
      * @author Samuel Lee Toepke
      * 
@@ -35,10 +35,10 @@ public class HttpRequestTest {
     public void getTimeDefaultShouldReturnGmt() throws Exception {
         assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/gettime", String.class)).contains("GMT");
     }
-	
-	/*
+
+    /*
      * getTimeWithInputShouldReturnPst(). REST test to make sure
-	 *   input PST returns time PST.
+     *   input PST returns time PST.
      *   
      * @author Samuel Lee Toepke
      * 
@@ -48,10 +48,10 @@ public class HttpRequestTest {
     public void getTimeWithInputShouldReturnPst() throws Exception {
         assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/gettime?tz=PST", String.class)).contains("PST");
     }
-	
+
     /*
      * getTimeWithBadInputShouldReturnError(). REST test to make sure
-	 *   an incorrect input returns an error.
+     *   an incorrect input returns an error.
      *   
      * @author Samuel Lee Toepke
      * 

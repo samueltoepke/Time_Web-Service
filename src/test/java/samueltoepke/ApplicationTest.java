@@ -11,7 +11,7 @@ public class ApplicationTest {
 
     /*
      * contextLoads(). Simple test to make sure the 
-	 *   context is loading.
+     *   context is loading.
      *   
      * @author Samuel Lee Toepke
      * 
