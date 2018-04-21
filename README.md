@@ -17,6 +17,9 @@ The project requires Java 1.8 and Gradle 4.6 to be installed, and available from
 * `$ gradle build`
 * `$ java -jar ./build/libs/sprint-boot-time-web-service.jar`
 
+## To run the test suite in Gradle, results can be seen in build/reports/tests/test/index.html:
+* `$ gradle test`
+
 ## Once the application is running, use a web browser to view the following URLs:
 * Current time for GMT: [http://localhost:8080/gettime](http://localhost:8080/gettime)
 * Current time for specified time zone: [http://localhost:8080/gettime?tz=EST](http://localhost:8080/gettime?tz=EST). Legal timezone inputs conform to current recognized [Java timezone IDs](https://garygregory.wordpress.com/2013/06/18/what-are-the-java-timezone-ids/). 
